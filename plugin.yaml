@@ -1,0 +1,10 @@
+plugin:
+    name: 'eev.corpcore::lang.plugin.name'
+    description: 'eev.corpcore::lang.plugin.description'
+    author: 'Evgeny Epifanov'
+    icon: oc-icon-edit
+    homepage: 'https://eecode.ru'
+permissions:
+    eev.corpcore.settings:
+        tab: 'eev.corpcore::lang.settings'
+        label: 'eev.corpcore::lang.settings'
