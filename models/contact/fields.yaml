@@ -1,0 +1,14 @@
+fields:
+    text:
+        label: 'eev.corpcore::lang.text'
+        span: full
+        type: text
+    type:
+        label: 'eev.corpcore::lang.type'
+        showSearch: true
+        span: full
+        type: dropdown
+    link:
+        label: 'eev.corpcore::lang.link'
+        span: full
+        type: text

@@ -6,5 +6,26 @@ plugin:
     homepage: 'https://eecode.ru'
 permissions:
     eev.corpcore.settings:
-        tab: 'eev.corpcore::lang.settings'
+        tab: 'eev.corpcore::lang.company'
         label: 'eev.corpcore::lang.settings'
+    eev.corpcore.contacts:
+        tab: 'eev.corpcore::lang.company'
+        label: 'eev.corpcore::lang.contacts'
+navigation:
+    company:
+        label: 'eev.corpcore::lang.company'
+        url: eev/corpcore/contactcontroller
+        icon: icon-edit
+        sideMenu:
+            settings:
+                label: 'eev.corpcore::lang.company'
+                url: null
+                icon: icon-edit
+                permissions:
+                    - eev.corpcore.settings
+            contacts:
+                label: 'eev.corpcore::lang.contacts'
+                url: eev/corpcore/contactcontroller
+                icon: icon-book
+                permissions:
+                    - eev.corpcore.contacts

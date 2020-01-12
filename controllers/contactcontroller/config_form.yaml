@@ -1,0 +1,11 @@
+name: ContactController
+modelClass: EEV\CorpCore\Models\Contact
+form: $/eev/corpcore/models/contact/fields.yaml
+defaultRedirect: eev/corpcore/contactcontroller
+create:
+    redirect: 'eev/corpcore/contactcontroller/update/:id'
+    redirectClose: eev/corpcore/contactcontroller
+update:
+    redirect: eev/corpcore/contactcontroller
+    redirectClose: eev/corpcore/contactcontroller
+preview: {  }
