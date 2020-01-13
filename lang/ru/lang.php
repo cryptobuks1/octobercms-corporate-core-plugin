@@ -10,6 +10,7 @@ return [
     'contact' => 'Контакт',
     'settings' => 'Настройки',
     'text' => 'Текст',
+    'title' => 'Заголовок',
     'link' => 'Ссылка',
     'type' => 'Тип',
     'css_class' => 'CSS-класс',

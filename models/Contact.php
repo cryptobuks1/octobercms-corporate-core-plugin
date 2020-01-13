@@ -1,5 +1,6 @@
 <?php namespace EEV\CorpCore\Models;
 
+use Illuminate\Support\Facades\Lang;
 use Model;
 
 /**
@@ -8,7 +9,7 @@ use Model;
 class Contact extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -27,7 +28,16 @@ class Contact extends Model
     public $rules = [
     ];
 
-    public function getTypeOptions() {
+    public function getTypeOptions()
+    {
         return ContactType::get();
+    }
+
+    public function getTypeNameAttribute()
+    {
+        if (isset(ContactType::get()[$this->type])) {
+            return trans(ContactType::get()[$this->type]);
+        }
+        return $this->type;
     }
 }

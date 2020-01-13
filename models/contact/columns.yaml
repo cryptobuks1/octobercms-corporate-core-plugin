@@ -2,16 +2,21 @@ columns:
     id:
         label: id
         type: number
-    text:
-        label: text
+    title:
+        label: 'eev.corpcore::lang.title'
         type: text
         searchable: true
         sortable: true
-    type:
-        label: type
+    type_name:
+        label: 'eev.corpcore::lang.type'
         type: text
         sortable: true
+    text:
+        label: 'eev.corpcore::lang.text'
+        type: text
+        searchable: true
+        sortable: true
     link:
-        label: link
+        label: 'eev.corpcore::lang.link'
         type: text
         searchable: true

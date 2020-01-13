@@ -3,3 +3,6 @@
 1.0.1:
     - 'Created table eev_corpcore_contacts'
     - builder_table_create_eev_corpcore_contacts.php
+1.0.2:
+    - 'Updated table eev_corpcore_contacts'
+    - builder_table_update_eev_corpcore_contacts.php
