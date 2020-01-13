@@ -38,6 +38,20 @@ class Contact extends ComponentBase
                 'type' => 'dropdown',
                 'showExternalParam' => false,
             ],
+            'title' => [
+                'title' => 'eev.corpcore::lang.title',
+                'description' => '',
+                'default' => '',
+                'type' => 'string',
+                'showExternalParam' => false,
+            ],
+            'show_title' => [
+                'title' => 'eev.corpcore::lang.show_title',
+                'description' => '',
+                'default' => false,
+                'type' => 'checkbox',
+                'showExternalParam' => false,
+            ],
             'text' => [
                 'title' => 'eev.corpcore::lang.text',
                 'description' => '',
@@ -162,6 +176,19 @@ class Contact extends ComponentBase
 
         if ($this->contact && !empty($this->contact->type)) {
             return $this->contact->type;
+        }
+
+        return '';
+    }
+
+    public function getTitle()
+    {
+        if (!empty($this->property('title'))) {
+            return $this->property('title');
+        }
+
+        if ($this->contact && !empty($this->contact->title)) {
+            return $this->contact->title;
         }
 
         return '';

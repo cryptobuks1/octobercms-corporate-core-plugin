@@ -20,4 +20,5 @@ return [
     'none' => 'Нет',
     'phone' => 'Телефон',
     'email' => 'Email',
+    'show_title' => 'Показывать заголовок',
 ];
